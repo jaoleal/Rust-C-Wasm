@@ -1,0 +1,18 @@
+[package]
+name = "c_bind_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "c_bind_test"
+path = "src/main.rs"
+
+[build]
+target = ["wasm32-unknown-unknown"]
+
+[dependencies]
+yew = { git = "https://github.com/yewstack/yew/", features = ["csr"] }
+c_calls = { path = "bindings/"}
+wasm-bindgen = "0.2"
+
