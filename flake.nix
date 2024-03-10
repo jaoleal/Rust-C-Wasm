@@ -1,5 +1,5 @@
 {
-  description = "Not mine godot-rust flake!";
+  description = "Rust-C-Wasm flakes";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
